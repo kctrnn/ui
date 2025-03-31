@@ -1,9 +1,6 @@
 {
   "name": "@kctrnn/ui",
-  "description": "",
   "author": "kctrnn",
-  "license": "ISC",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "publishConfig": {
