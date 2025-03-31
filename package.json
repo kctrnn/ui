@@ -1,8 +1,14 @@
 {
-  "name": "@kctrnndev/ui",
-  "private": false,
-  "version": "1.0.2",
+  "name": "@kctrnn/ui",
+  "description": "",
+  "author": "kctrnn",
+  "license": "ISC",
+  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "publishConfig": {
+    "@kctrnn:registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "dist"
   ],
@@ -67,16 +73,5 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "description": "this is description",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kctrnn/ui.git"
-  },
-  "author": "kctrnn",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kctrnn/ui/issues"
-  },
-  "homepage": "https://github.com/kctrnn/ui#readme"
+  }
 }
