@@ -17,7 +17,8 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/ui.js",
       "require": "./dist/ui.umd.cjs"
-    }
+    },
+    "./style.css": "./dist/ui.css"
   },
   "scripts": {
     "dev": "vite",
