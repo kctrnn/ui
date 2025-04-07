@@ -1,7 +1,7 @@
 {
   "name": "@kctrnn/ui",
   "author": "kctrnn",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "type": "module",
   "publishConfig": {
     "@kctrnn:registry": "https://npm.pkg.github.com"
@@ -9,16 +9,20 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/ui.umd.cjs",
-  "module": "./dist/ui.js",
+  "main": "./dist/ui.js",
+  "module": "./dist/ui.mjs",
   "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/ui.js",
-      "require": "./dist/ui.umd.cjs"
-    },
-    "./style.css": "./dist/ui.css"
+      "import": "./dist/ui.mjs",
+      "require": "./dist/ui.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "scripts": {
     "dev": "vite",
@@ -66,10 +70,6 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0",
     "vite-plugin-dts": "^4.5.3"
-  },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
   },
   "eslintConfig": {
     "extends": [
